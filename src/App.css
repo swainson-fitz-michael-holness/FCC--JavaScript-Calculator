@@ -31,3 +31,175 @@
     transform: rotate(360deg);
   }
 }
+
+.main-page {
+  background-color: rgb(233, 235, 241);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* the calculator app window that accepts interaction */
+.calc-window {
+  background-color: white;
+  height:  500px;
+  width: 350px;
+
+  /* shadow */
+  -webkit-box-shadow: -2px 3px 26px 0px rgba(0,0,0,0.14);
+  -moz-box-shadow: -2px 3px 26px 0px rgba(0,0,0,0.14);
+  box-shadow: -2px 3px 26px 0px rgba(0,0,0,0.14);
+
+  /* rounded corners */
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border: 0px solid #000000;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 20px;
+}
+
+#display {
+  height: 130px;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#controls > div {
+  width: 87.5px;
+  height: 74px;
+  text-align: center;
+  text-justify: center;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s; /* For Safari 3.1 to 6.0 */
+  transition: opacity 0.2s;
+}
+
+#controls > div:hover {
+  opacity: 0.4;
+}
+
+div p {
+  font-size: 1.2rem;
+}
+
+.operation {
+  color: #4aa6ca;
+  font-size: 1.2rem;
+}
+
+#display h1 {
+  text-align: right;
+  margin-right: 25px;
+  font-weight: 300;
+  font-size: 2.7rem;
+  margin-bottom: 0px;
+}
+
+#display p {
+  text-align: right;
+  margin-right: 29px;
+  margin-top: 7px;
+  opacity: 0.3;
+  font-weight: 600;
+}
+
+/*Author: Swainson Holness*/
+
+/*wave-fx code*/
+.wave-fx {
+  overflow: hidden;
+  position: relative;
+  display: block
+}
+
+.fab {
+  background-color: slategrey;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  overflow: hidden;
+  -webkit-animation: ripple-animate 3s;
+  -moz-animation: ripple-animate 3s;
+  -o-animation: ripple-animate 3s;
+  -ms-animation: ripple-animate 3s;
+  animation: ripple-animate 3s;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+}
+
+@keyframes ripple-animate {
+  from {
+      transform: scale(1);
+      opacity: 0.35;
+  }
+  to {
+      transform: scale(100);
+      opacity: 0;
+  }
+}
+
+@-webkit-keyframes ripple-animate {
+  from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0.35;
+  }
+  to {
+      -webkit-transform: scale(100);
+      transform: scale(100);
+      opacity: 0;
+  }
+}
+
+@-moz-keyframes ripple-animate {
+  from {
+      transform: scale(1);
+      opacity: 0.35;
+  }
+  to {
+      transform: scale(100);
+      opacity: 0;
+  }
+}
+
+@-o-keyframes ripple-animate {
+  from {
+      transform: scale(1);
+      opacity: 0.35;
+  }
+  to {
+      transform: scale(100);
+      opacity: 0;
+  }
+}
+
+@-ms-keyframes ripple-animate {
+  from {
+      transform: scale(1);
+      opacity: 0.35;
+  }
+  to {
+      transform: scale(100);
+      opacity: 0;
+  }
+}
